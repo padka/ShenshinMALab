@@ -16,11 +16,12 @@ public interface EmployeeService {
      * @param position      Должность сотрудника.
      * @param worksRemotely Указывает, работает ли сотрудник удаленно.
      * @param bankOffice
+     * @param b
      * @param salary        Размер зарплаты сотрудника.
      * @return Созданный сотрудник.
      */
     Employee createEmployee(Long id, String fullName, LocalDate birthDate, String position,
-                            boolean worksRemotely, BankOffice bankOffice, double salary);
+                            boolean worksRemotely, BankOffice bankOffice, boolean b, double salary);
 
     /**
      * Возвращает сотрудника по его идентификатору.

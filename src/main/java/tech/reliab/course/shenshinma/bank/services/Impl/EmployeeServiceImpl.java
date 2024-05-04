@@ -12,7 +12,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee createEmployee(Long id, String fullName, LocalDate birthDate, String position,
-                                   boolean worksRemotely, BankOffice bankOffice, double salary) {
+                                   boolean worksRemotely, BankOffice bankOffice, boolean b, double salary) {
         if (this.employee == null) {
             this.employee = Employee.builder()
                     .id(id)
