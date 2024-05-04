@@ -3,20 +3,35 @@ package tech.reliab.course.shenshinma.bank.entity;
 import lombok.*;
 
 /**
- * Класс Bank описывает банк в банковской системе.
+ * Класс {@code Bank} описывает банк в банковской системе.
  */
 @Getter
 @Setter
+@NoArgsConstructor
 @AllArgsConstructor
 public class Bank {
-    private long id; // Уникальный идентификатор банка
-    private String name; // Название банка
-    private int numberOfOffices; // Количество офисов банка
-    private int numberOfAtms; // Количество банкоматов
-    private int numberOfEmployees; // Количество сотрудников
-    private int numberOfClients; // Количество клиентов
-    private int rating; // Рейтинг банка
-    private double totalMoneyInBank; // Общая сумма денег в банке
-    private double interestRate; // Процентная ставка
+    private long id;
+    private String name;
+    private int numberOfOffices;
+    private int numberOfAtms;
+    private int numberOfEmployees;
+    private int numberOfClients;
+    private int rating;
+    private double totalMoneyInBank;
+    private double interestRate;
 
+    @Override
+    public String toString() {
+        return "Bank{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", numberOfOffices=" + numberOfOffices +
+                ", numberOfAtms=" + numberOfAtms +
+                ", numberOfEmployees=" + numberOfEmployees +
+                ", numberOfClients=" + numberOfClients +
+                ", rating=" + rating +
+                ", totalMoneyInBank=" + totalMoneyInBank +
+                ", interestRate=" + interestRate +
+                '}';
+    }
 }
